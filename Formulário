@@ -1,27 +1,65 @@
-<!DOCTYPE html>
-<html lang="pt">
+<DOCTYPE html>
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <title>Formulário de Contacto</title>
+    <meta charset="UTF-8">
+    <title>Formulário Completo</title>
 </head>
 <body>
 
-  <h2>Formulário de Contacto</h2>
+    <h2>Formulário Completo</h2>
 
-  <form action="https://formspree.io/f/mwkjnzbn" method="POST">
+    <form action="#" method="post" enctype="multipart/form-data">
 
-    <label>Nome:</label><br>
-    <input type="text" name="name" required><br><br>
+      
+        <h3>Informações Pessoais</h3>
 
-    <label>Email:</label><br>
-    <input type="email" name="_replyto" required><br><br>
+        <label for="nome">Nome completo:</label><br>
+        <input type="text" id="nome" name="nome" required><br><br>
 
-    <label>Mensagem:</label><br>
-    <textarea name="message" rows="5" required></textarea><br><br>
+     
+        <label>Gênero:</label><br>
+        <input type="radio" name="genero" value="masculino"> Masculino<br>
+        <input type="radio" name="genero" value="feminino"> Feminino<br>
 
-    <button type="submit">Enviar</button>
 
-  </form>
+        <h3>Informações de Contato</h3>
+
+        <label for="email">E-mail:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        
+        
+        <h3>Informações de Acesso</h3>
+
+        <label for="usuario">Nome de usuário:</label><br>
+        <input type="text" id="usuario" name="usuario" required><br><br>
+
+        <label for="senha">Senha:</label><br>
+        <input type="password" id="senha" name="senha" required><br><br>
+
+        <h3>Preferências</h3>
+
+        <label for="plano">Escolha um plano:</label><br>
+        <select id="plano" name="plano">
+            <option value="basico">Básico</option>
+            <option value="intermediario">Intermediário</option>
+            <option value="premium">Premium</option>
+        </select><br><br>
+
+        <label>Interesses:</label><br>
+        <input type="checkbox" name="interesses" value="tecnologia"> Tecnologia<br>
+        <input type="checkbox" name="interesses" value="design"> Design<br>
+        <input type="checkbox" name="interesses" value="games"> Games<br>
+        <input type="checkbox" name="interesses" value="musica"> Música<br>
+       
+      
+        <h3>Envia foto do B.I</h3>
+
+        <label for="arquivo">Enviar documento:</label><br>
+        <input type="file" id="arquivo" name="arquivo"><br><br>
+
+      
+    </form>
 
 </body>
 </html>
